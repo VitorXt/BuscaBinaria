@@ -1,1 +1,45 @@
+using System;
 
+class Program
+{
+    static int BuscaBinaria(string[] vetor, string ValorBuscado)
+    {
+        int inicio = 0;
+        int fim = vetor.Length;
+
+        while (inicio <= fim)
+        {
+            int meio = (inicio + fim) / 2;
+
+            if (vetor[meio] == ValorBuscado)
+            {
+                return meio;
+            }
+            else if (string.Compare(vetor[meio], ValorBuscado) < 0)
+            {
+                inicio = meio + 1;
+            }
+            else
+            {
+                fim = meio;
+            }
+        }
+        return -1;
+    }
+
+    static void Main(string[] args)
+    {
+        string[] vetor = { "abacaxi", "banana", "cenoura", "laranja", "melancia", "pera", "pessego", "uva" };
+        string ValorBuscado = "abacaxi";
+        int indice = BuscaBinaria(vetor, ValorBuscado);
+
+        if (indice == -1)
+        {
+            Console.WriteLine("A palavra '{0}' não foi encontrada.", ValorBuscado);
+        }
+        else
+        {
+            Console.WriteLine("A palavra '{0}' foi encontrada na posição {1}.", ValorBuscado, indice);
+        }
+    }
+}
