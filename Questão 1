@@ -1,17 +1,15 @@
-A)  A complexidade da busca linear é O(n), onde "n" é o tamanho da lista ou do array no qual a busca está sendo realizada.
-Por outro lado, a complexidade da busca binária é O (log n), onde "n" é o tamanho da lista ordenada.
-Comparativamente, a busca binária é mais eficiente que a busca linear em termos de tempo de execução, especialmente para listas grandes. 
-No entanto, é importante observar que a busca binária só é aplicável a listas ordenadas. 
-Se a lista não estiver ordenada, é necessário primeiro ordená-la, o que adiciona uma complexidade adicional ao processo.
-Portanto, no geral, a busca binária é mais eficiente em termos de tempo de execução para listas ordenadas, especialmente para listas grandes.
-No entanto, se a lista não estiver ordenada ou se o acesso aleatório aos elementos for problemático, a busca linear pode ser a melhor opção.
+A)  A complexidade da busca linear é O(n), onde "n" é o tamanho da lista ou do array no qual a busca está sendo realizada. Por outro lado, a complexidade da 
+busca binária é O (log n), onde "n" é o tamanho da lista ordenada. Comparativamente, a busca binária é mais eficiente que a busca linear em termos de tempo de execução, 
+especialmente para listas grandes. No entanto, é importante observar que a busca binária só é aplicável a listas ordenadas. 
+Se a lista não estiver ordenada, é necessário primeiro ordená-la, o que adiciona uma complexidade adicional ao processo. Portanto, no geral, a busca binária é mais 
+eficiente em termos de tempo de execução para listas ordenadas, especialmente para listas grandes. No entanto, se a lista não estiver ordenada ou se o acesso aleatório 
+aos elementos for problemático, a busca linear pode ser a melhor opção.
 
-B)  Sim, há casos em que a busca linear pode ser melhor que a busca binária. 
-Esses casos ocorrem quando a lista não está ordenada ou quando o custo de ordenar a lista é alto.
-Se a lista não estiver ordenada, a busca binária não pode ser aplicada diretamente, pois ela requer uma lista ordenada para funcionar corretamente. 
+B)  Sim, há casos em que a busca linear pode ser melhor que a busca binária. Esses casos ocorrem quando a lista não está ordenada ou quando o custo de ordenar a lista é 
+alto. Se a lista não estiver ordenada, a busca binária não pode ser aplicada diretamente, pois ela requer uma lista ordenada para funcionar corretamente. 
 Nesse cenário, a busca linear é a única opção viável.
 
 C) Sim, a ordenação do vetor influencia tanto na busca linear quanto na busca binária, pois enquanto a busca linear pode ser aplicada independentemente da ordenação 
-do vetor, a busca binária requer que o vetor esteja ordenado para funcionar corretamente. 
-É importante levar em consideração a ordenação dos dados ao escolher entre esses dois algoritmos de busca.
+do vetor, a busca binária requer que o vetor esteja ordenado para funcionar corretamente. É importante levar em consideração a ordenação dos dados ao escolher entre 
+esses dois algoritmos de busca.
 
