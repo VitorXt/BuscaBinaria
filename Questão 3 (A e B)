@@ -1,5 +1,8 @@
 A) Para o código continue a funcionar mesmo colocando um número a mais como o 5, tem que se fazer um resize no código, para que o valor inserido fique na posição 
 crescente com base nos números já inseridos no vetor, pois caso for adicionado normalmente, ele irá para a última posição, fazendo com que a busca binária fique falha.
 
-B)
+B) Na operação anterior, foi necessário criar um novo vetor com um elemento adicional e copiar os elementos antes e depois da posição de inserção. 
+Embora isso tenha funcionado para inserir o novo valor e manter a ordem crescente, essa abordagem tem uma complexidade de tempo de O(n), onde n é o número de elementos 
+no vetor. Sendo assim, ao criar um novo vetor e copiar os elementos, faz com que a medida do vetor aumente de tamanho, o que resulta em um tempo necessário maior também.
+
 
